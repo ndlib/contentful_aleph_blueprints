@@ -15,4 +15,23 @@ const app = new App({
 })
 Aspects.of(app).add(new StackTags())
 
-new ContentfulAlephStack(app, 'BlahStack')
+const stage = app.node.tryGetContext('stage') || 'dev'
+const sentryProject = app.node.tryGetContext('sentryProject')
+
+let lambdaCodePath = app.node.tryGetContext('lambdaCodePath')
+let sentryVersion = app.node.tryGetContext('sentryVersion')
+if (!lambdaCodePath) {
+  lambdaCodePath = '../contentful_aleph/src'
+  sentryVersion = execSync(`cd ${lambdaCodePath} && git rev-parse HEAD`).toString().trim()
+}
+
+if (lambdaCodePath) {
+  const stackName = app.node.tryGetContext('serviceStackName') || `contentful-aleph-${stage}`
+  new ContentfulAlephStack(app, stackName, {
+    stackName,
+    stage,
+    lambdaCodePath,
+    sentryProject,
+    sentryVersion,
+  })
+}
