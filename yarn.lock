@@ -192,6 +192,23 @@
     "@aws-cdk/core" "1.74.0"
     constructs "^3.2.0"
 
+"@aws-cdk/aws-codedeploy@1.74.0":
+  version "1.74.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-codedeploy/-/aws-codedeploy-1.74.0.tgz#852fbb2d7c1b19f196b596cbb07ae3d84b948845"
+  integrity sha512-ox2Tk1CFi9Ea6ps6M+nyDzQ0AU2A+D65rZa8mVg+a+No7HK/8dCZ9BpfobyyNKfXarbsGF/NcMwenxrnBYybRQ==
+  dependencies:
+    "@aws-cdk/aws-autoscaling" "1.74.0"
+    "@aws-cdk/aws-cloudwatch" "1.74.0"
+    "@aws-cdk/aws-ec2" "1.74.0"
+    "@aws-cdk/aws-elasticloadbalancing" "1.74.0"
+    "@aws-cdk/aws-elasticloadbalancingv2" "1.74.0"
+    "@aws-cdk/aws-iam" "1.74.0"
+    "@aws-cdk/aws-lambda" "1.74.0"
+    "@aws-cdk/aws-s3" "1.74.0"
+    "@aws-cdk/core" "1.74.0"
+    "@aws-cdk/custom-resources" "1.74.0"
+    constructs "^3.2.0"
+
 "@aws-cdk/aws-codeguruprofiler@1.74.0":
   version "1.74.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-codeguruprofiler/-/aws-codeguruprofiler-1.74.0.tgz#d749688e9edb252ce6fc68efa4f9977f7ba02cb6"
@@ -199,6 +216,32 @@
   dependencies:
     "@aws-cdk/aws-iam" "1.74.0"
     "@aws-cdk/core" "1.74.0"
+    constructs "^3.2.0"
+
+"@aws-cdk/aws-codepipeline-actions@1.74.0":
+  version "1.74.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-codepipeline-actions/-/aws-codepipeline-actions-1.74.0.tgz#e1b8dc31ca981f5aa36e30e89fbced7698983410"
+  integrity sha512-9rzRmyMbzdv6Ymqlb/91708q6FTuOeueOdOtHu3dExGpcNsqovwxezTD5Q+F+jFwIVF6J+4ctMKC+vTg8KC6rg==
+  dependencies:
+    "@aws-cdk/aws-cloudformation" "1.74.0"
+    "@aws-cdk/aws-codebuild" "1.74.0"
+    "@aws-cdk/aws-codecommit" "1.74.0"
+    "@aws-cdk/aws-codedeploy" "1.74.0"
+    "@aws-cdk/aws-codepipeline" "1.74.0"
+    "@aws-cdk/aws-ec2" "1.74.0"
+    "@aws-cdk/aws-ecr" "1.74.0"
+    "@aws-cdk/aws-ecs" "1.74.0"
+    "@aws-cdk/aws-events" "1.74.0"
+    "@aws-cdk/aws-events-targets" "1.74.0"
+    "@aws-cdk/aws-iam" "1.74.0"
+    "@aws-cdk/aws-lambda" "1.74.0"
+    "@aws-cdk/aws-s3" "1.74.0"
+    "@aws-cdk/aws-servicecatalog" "1.74.0"
+    "@aws-cdk/aws-sns" "1.74.0"
+    "@aws-cdk/aws-sns-subscriptions" "1.74.0"
+    "@aws-cdk/aws-stepfunctions" "1.74.0"
+    "@aws-cdk/core" "1.74.0"
+    case "1.6.3"
     constructs "^3.2.0"
 
 "@aws-cdk/aws-codepipeline@1.74.0", "@aws-cdk/aws-codepipeline@^1.45.0":
@@ -508,6 +551,14 @@
     "@aws-cdk/aws-kms" "1.74.0"
     "@aws-cdk/aws-lambda" "1.74.0"
     "@aws-cdk/aws-sam" "1.74.0"
+    "@aws-cdk/core" "1.74.0"
+    constructs "^3.2.0"
+
+"@aws-cdk/aws-servicecatalog@1.74.0":
+  version "1.74.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-servicecatalog/-/aws-servicecatalog-1.74.0.tgz#b24d9bda4bda5c920553dc3e758db1591de57143"
+  integrity sha512-liStiIbCy1GZSX+6dT5f31tSm3k1kCQHiZf1J2ennJsF30V+WHtGlimbwwpyNauHC/v30h51mpXwo0Ko2vonmQ==
+  dependencies:
     "@aws-cdk/core" "1.74.0"
     constructs "^3.2.0"
 
@@ -1868,6 +1919,11 @@ capture-exit@^2.0.0:
   integrity sha512-PiT/hQmTonHhl/HFGN+Lx3JJUznrVYJ3+AQsnthneZbvW7x+f08Tk7yLJTLEOUvBTbduLeeBkxEaYXUOUrRq6g==
   dependencies:
     rsvp "^4.8.4"
+
+case@1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
+  integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
 caseless@~0.12.0:
   version "0.12.0"
