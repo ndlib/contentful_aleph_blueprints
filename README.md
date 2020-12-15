@@ -11,5 +11,5 @@ Infrastructure-as-code for the Hesburgh Libraries [contentful_aleph service](htt
 
  ## Deployment
  ```
- cdk deploy contentful-aleph-pipeline
+ cdk deploy contentful-aleph-pipeline -c slackNotifyStackName=slack-approval-bot-wse-notifier
  ```
