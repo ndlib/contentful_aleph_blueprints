@@ -52,7 +52,7 @@ export class ContentfulAlephStack extends Stack {
       handler: 'sync.handler',
       runtime: Runtime.NODEJS_12_X,
       logRetention: RetentionDays.ONE_WEEK,
-      memorySize: 128,
+      memorySize: 512,
       timeout: Duration.minutes(15),
       environment: env,
     })
