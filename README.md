@@ -9,7 +9,8 @@ Infrastructure-as-code for the Hesburgh Libraries [contentful_aleph service](htt
  * `cdk diff`        compare deployed stack with current state
  * `cdk synth`       emits the synthesized CloudFormation template
 
- ## Deployment
- ```
- cdk deploy contentful-aleph-pipeline -c slackNotifyStackName=slack-approval-bot-wse-notifier
- ```
+## Deployment
+```
+cdk deploy contentful-aleph-pipeline -c slackNotifyStackName=[stack-name]
+```
+Please ensure Slack notifications will go to #wse-deployment-approvals.
